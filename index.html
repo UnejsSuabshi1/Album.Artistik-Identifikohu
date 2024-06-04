@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Identifikohu</title>
+    <script language="JavaScript">
+        function SignIn()
+        {alert("Mirë se vini në website-in tonë!!!")}
+        function SignUp()
+        {alert("Ju jeni Regjistruar.")}
+    </script>
+</head>
+<body>
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="#" class="form" id="form1">
+                <h2 class="form__title">Regjistrohu</h2>
+                <input type="text" placeholder="Përdoruesi" class="input" />
+                <input type="email" placeholder="Email-i" class="input" />
+                <input type="password" placeholder="Password-i" class="input" />
+                <button class="btn" onclick="SignUp()">Regjistrohu</button>
+            </form>
+        </div>
+    
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form__title">Hyr</h2>
+                <input type="email" placeholder="Email-i" class="input" />
+                <input type="password" placeholder="Password-i" class="input" />
+                <a href="https://passwords.google.com/?pli=1" class="link">Harruat password-in?</a>
+                <button class="btn" onclick="SignIn()">Hyr</button>
+            </form>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Hyr</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp" >Regjistrohu</button>
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
